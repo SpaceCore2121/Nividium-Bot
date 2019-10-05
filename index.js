@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NjI4MzEwMzc4MTQ0NTk1OTY4.XZJV-Q.Mdh60LmQTFuzXtjj5fkiGS0fsM4';
+const token = process.env.arcandia
 
 const PREFIX = 'n!';
 
@@ -175,4 +175,4 @@ bot.on('message', msg => {
 })
 
 
-bot.login(token);
+bot.login(process.env.token);
